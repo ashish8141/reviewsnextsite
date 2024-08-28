@@ -77,7 +77,7 @@ export default function Dashboard() {
   };
 
   const handleDelete = async (id: string) => {
-    if (lockCodeInput !== '1111') {
+    if (lockCodeInput !== '8141') {
       setDeleteMessage('Incorrect code. Please try again.');
       return;
     }
@@ -108,7 +108,7 @@ export default function Dashboard() {
   };
 
   const handleUnlock = () => {
-    if (lockScreenCode === '1111') {
+    if (lockScreenCode === '8141') {
       setIsUnlocked(true);
     } else {
       alert('Incorrect code. Please try again.');
